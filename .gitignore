@@ -1,3 +1,2 @@
 /node_modules
-
-MONGODB_URL = mongodb+srv://smi23117:ksmi0709@cluster0.h4iwh.mongodb.net/project1
+.env
