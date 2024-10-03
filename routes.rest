@@ -1,0 +1,42 @@
+### Get all users
+GET http://localhost:3000/users
+Content-Type: application/json
+
+###
+
+### Get a single user by ID
+GET http://localhost:3000/users/66f4c270b530905c84719dec
+Content-Type: application/json
+
+###
+
+# Create a new user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com",
+  "favoriteColor": "blue",
+  "birthday": "1990-01-01"
+}
+
+###
+
+# Update a user
+PUT http://localhost:3000/users/66fdf3b9b02372e31028cab4
+Content-Type: application/json
+
+{
+  "username": "johndoe123",
+  "email": "john.doe@example.com",
+  "name": "John Doe",
+  "ipaddress": "192.168.1.1"
+}
+
+###
+
+# Delete a user
+DELETE http://localhost:3000/users/66fdf3b9b02372e31028cab4
+Content-Type: application/json
