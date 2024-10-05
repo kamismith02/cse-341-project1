@@ -41,9 +41,12 @@ const updateUser = async (req, res) => {
     //#swagger.tags=['Users']
     const userId = new ObjectId(req.params.id);
     const user = {
+        firstName: req.body.firstName,
+        lastName:req.body.lastName,
         username: req.body.username,
         email: req.body.email,
-        name: req.body.name,
+        favoriteColor: req.body.favoriteColor,
+        birthday: req.body.birthday,
         ipaddress: req.body.ipaddress
     };
     const response = await mongodb.getDatabase().db().collection('users').replaceOne({ _id: userId }, user);
