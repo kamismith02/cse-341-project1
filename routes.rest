@@ -1,16 +1,21 @@
-### Get all users
+# Get all users (localhost)
 GET http://localhost:3000/users
 Content-Type: application/json
 
 ###
 
-### Get a single user by ID
+# Get API Documentation (localhost)
+GET http://localhost:3000/api-docs
+
+###
+
+# Get a single user by ID (localhost)
 GET http://localhost:3000/users/66f4c270b530905c84719dec
 Content-Type: application/json
 
 ###
 
-# Create a new user
+# Create a new user (localhost)
 POST http://localhost:3000/users
 Content-Type: application/json
 
@@ -24,19 +29,75 @@ Content-Type: application/json
 
 ###
 
-# Update a user
-PUT http://localhost:3000/users/66fdf3b9b02372e31028cab4
+# Update a user (localhost)
+PUT http://localhost:3000/users/67016c399dccf1699ec8fa2e
 Content-Type: application/json
 
 {
   "username": "johndoe123",
+  "firstName": "John",
+  "lastName": "Doe",
   "email": "john.doe@example.com",
-  "name": "John Doe",
+  "favoriteColor": "green",
+  "birthday": "1990-01-01",
   "ipaddress": "192.168.1.1"
 }
 
 ###
 
-# Delete a user
-DELETE http://localhost:3000/users/66fdf3b9b02372e31028cab4
+# Delete a user (localhost)
+DELETE http://localhost:3000/users/67016c399dccf1699ec8fa2e
+Content-Type: application/json
+
+###
+
+# Get all users (published link)
+GET https://project1-kbfe.onrender.com/users
+Content-Type: application/json
+
+###
+
+# Get API Documentation (published link)
+GET https://project1-kbfe.onrender.com/api-docs
+
+###
+
+# Get a single user by ID (published link)
+GET https://project1-kbfe.onrender.com/users/66f4c270b530905c84719dec
+Content-Type: application/json
+
+###
+
+# Create a new user (published link)
+POST https://project1-kbfe.onrender.com/users
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com",
+  "favoriteColor": "blue",
+  "birthday": "1990-01-01"
+}
+
+###
+
+# Update a user (published link)
+PUT https://project1-kbfe.onrender.com/users/67016e595e15ed45c841c98b
+Content-Type: application/json
+
+{
+  "username": "johndoe123",
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com",
+  "favoriteColor": "green",
+  "birthday": "1990-01-01",
+  "ipaddress": "192.168.1.1"
+}
+
+###
+
+# Delete a user (published link)
+DELETE https://project1-kbfe.onrender.com/users/67016e595e15ed45c841c98b
 Content-Type: application/json
